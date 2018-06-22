@@ -1,0 +1,12 @@
+## install
+Maybe this command is wrong?
+$ npm install --save-dev babel-cli 
+ 
+## Command to run API
+$ ./node_modules/.bin/babel-node src/index.js
+
+will get  >>> Listening on port 5000.
+
+- run http://localhost:5000/eq on web browser will see data as json
+- For discord bot Need to edit API url in bot.js file >>>  request('http://localhost:5000/eq', .... 
+  when deploy to server need to change URL
