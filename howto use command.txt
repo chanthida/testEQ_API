@@ -10,3 +10,35 @@ will get  >>> Listening on port 5000.
 - run http://localhost:5000/eq on web browser will see data as json
 - For discord bot Need to edit API url in bot.js file >>>  request('http://localhost:5000/eq', .... 
   when deploy to server need to change URL
+  
+  
+=================== TODO
+
+Pull code and commanded in code folder
+
+Create new image with Dockerfile and package.json
+$ sudo docker build -t discord/api-eq .
+
+Run new again
+$ sudo docker run -p 49161:5000 -d discord/api-eq
+
+Docker exec 
+$ sudo docker exec -it xx bin/bash
+Or
+$ sudo docker exec -it xx bash
+
+and update code by ...
+$git pull 
+
+And Docker restart for update code
+$sudo docker restart xx
+
+========================
+
+Check images,container
+$ sudo docker images
+$ sudo docker ps -a
+
+Delete old one
+$ sudo docker rmi discord/node-bot   
+$ sudo docker rm CONTAINER_ID 
