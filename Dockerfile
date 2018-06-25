@@ -13,4 +13,5 @@ RUN npm install --save-dev babel-cli
 
 
 EXPOSE 5000
-CMD [ "npm", "start" ]
+#CMD [ "npm", "start" ]
+CMD ["./node_modules/.bin/babel-node","src/index.js"]

@@ -16,7 +16,7 @@ will get  >>> Listening on port 5000.
 
 Pull code and commanded in code folder
 
-Create new image with Dockerfile and package.json
+Create new image with Dockerfile and package.json and .babelrc
 $ sudo docker build -t discord/api-eq .
 
 Run new again
